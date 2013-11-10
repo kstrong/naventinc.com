@@ -1,0 +1,104 @@
+
+body {
+  background-image: url('images/background.png');
+  color: white;
+}
+
+.clear {
+  clear:both;
+}
+
+.header {
+  clear: both;
+  display: block;
+}
+
+.logo {
+  display: inline;
+  float: left;
+  width: 210px;
+  height: 140px;
+}
+
+.menu {
+  display: block;
+  margin: 0 0 0 210px;
+  padding: 38px 0 0 40px;
+}
+
+.menu li {
+  display: inline-block;
+  font-size: 1.8em;
+  list-style-type: none;
+  margin: 0 0 12px 64px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.left-col {
+  float: left;
+  width: 45%;
+}
+
+.right-col {
+  margin-left: 45%;
+}
+
+.content {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.products .left-col img {
+  border: 1px solid #222;
+  margin: 0 10%;
+  max-height: 300px;
+  max-width: 330px;
+}
+
+.info-box {
+  background-color: rgb(0, 174, 241);
+  background-color: rgba(0, 174, 241, 0.4);
+  border-radius: 12px;
+  margin: 12px 0;
+  padding: 10px;
+}
+
+.info-box h1 {
+  margin: 4px 0;
+}
+
+.info-box p { 
+  margin: 4px 2px;
+}
+
+.product-main {
+  margin: 10px 24px;
+}
+
+.product-photos {
+  clear: both;
+  margin: 18px auto;
+  max-width: 720px;
+}
+
+.product-slider img {
+  margin: 0 auto;
+  max-height: 128px;
+  border: 1px solid #777;
+  box-shadow: 0 0 2px #333;
+}
+
+.bx-wrapper {
+  margin: 0 auto 36px;
+}
+
+.bx-wrapper .bx-viewport {
+  background: none;
+  border: none;
+  box-shadow: 0 0 0 #CCC;
+  padding: 4px;
+}
