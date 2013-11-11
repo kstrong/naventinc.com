@@ -1,11 +1,40 @@
 
 body {
-  background-image: url('images/background.png');
+  background: url('images/background.png') repeat-y center top;
   color: white;
 }
 
 .clear {
   clear:both;
+}
+
+.homepage-logo {
+  display: block;
+  margin: 96px auto;
+  width: 330px;
+}
+
+.homepage-menu {
+  margin: 0 auto;
+  padding: 0;
+  width: 900px;
+}
+
+.homepage-menu li {
+  display: inline-block;
+  font-size: 1.8em;
+  list-style-type: none;
+  margin: 0 18px;
+}
+
+.homepage-menu li a {
+  text-decoration: none;
+}
+
+.homepage-menu li a span {
+  color: white;
+  display: block;
+  text-align: center;
 }
 
 .header {

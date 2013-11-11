@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navigator Entertainment - Products</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+  </head>
+  <body>
+
+    <div class="header">
+      <a href="/"><img class="logo" src="images/logo_white.png" /></a>
+
+      <ul class="menu">
+        <li><a href="/products">Products</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/company">Company</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+
+      <div class="clear"></div>
+    </div>
+
+    <div class="content products">
+
+      <div class="product-main">
+        <div class="left-col">
+          <img src="images/monster-mansion-interior-w.jpg" />
+        </div>
+
+        <div class="right-col">
+          <div class="info-box">
+            <h1>Monster Mansion</h1>
+            <p>Monster Mansion (formerly Monster Plantation) is a family &amp; kids style Mill Chute dark ride at 
+              Six Flags Over Georgia located in Austell, Georgia. 
+              Aboard 6-passenger boats, riders pass through nine scenes along the 700' foot-long flume, passing
+              by over 107 original audio animatronic characters. Outside of Disney parks, it is the world's 
+              largest animatronic-based family dark ride. The new &quot;Monster Mansion&quot; incarnation also
+              features more 4D effects than any other ride in the world.
+            </p>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+
+      <div class="product-photos info-box">
+        <h1>Behind the Scenes</h1>
+        <div class="product-slider">
+          <div class="slide"><img src="images/8.jpg" /></div>
+          <div class="slide"><img src="images/10.jpg" /></div>
+          <div class="slide"><img src="images/Boat Eater (peaches).JPG" /></div>
+          <div class="slide"><img src="images/Chili Monster and Fire Kid.JPG" /></div>
+          <div class="slide"><img src="images/MM Skins.jpg" /></div>
+          <div class="slide"><img src="images/MM New Figure.jpg" /></div>
+          <div class="slide"><img src="images/MM New Figure 4.jpg" /></div>
+          <div class="slide"><img src="images/MM New Figure 5.jpg" /></div>
+          <div class="slide"><img src="images/Coach and Scouts.JPG" /></div>
+          <div class="slide"><img src="images/band_1_thumb.png" /></div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+  <script type="text/javascript">
+  jQuery(function ($) {
+    $('.product-slider').bxSlider({
+      slideWidth: 164,
+      minSlides: 2,
+      maxSlides: 4,
+      slideMargin: 10
+    });
+  });
+  </script>
+</html>
