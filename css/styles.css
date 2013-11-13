@@ -65,6 +65,12 @@ body {
 .menu a {
   color: white;
   text-decoration: none;
+  transition: color 0.5s;
+}
+
+.menu li a:hover {
+  color: #999;
+  transition: color 0.5s;
 }
 
 .left-col {
