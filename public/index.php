@@ -23,12 +23,4 @@ $app->get('/products', function () use ($app) {
   $app->render('products.html');
 });
 
-$app->get('/foo', function () {
-  echo "FOOS";
-});
-
-$app->get('/test', function () {
-  echo "TEST";
-});
-
 $app->run();
