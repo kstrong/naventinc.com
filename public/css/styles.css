@@ -97,8 +97,8 @@ body {
   margin-left: 45%;
 }
 
+.content-home { margin: 0 auto; width: 960px; }
 .content {
-  /* margin: 0 auto; */
   margin-left: 220px;
   width: 960px;
 }
@@ -140,13 +140,18 @@ body {
 }
 
 .info-box p { 
-  margin: 4px 2px;
+  margin: 4px 2px 8px;
 }
 
 .content-secondary {
   clear: both;
   margin: 18px auto;
   max-width: 720px;
+  max-width: 960px;
+}
+
+.content-secondary h1 {
+  margin: 0 12px;
 }
 
 .secondary-menu {

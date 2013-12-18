@@ -9,7 +9,7 @@ $app = new \Slim\Slim(array(
 $view = $app->view();
 $view->parserOptions = array(
   'debug' => true,
-  'cache' => dirname(__FILE__).'/../cache'
+  'cache' => __DIR__.'/../cache'
 );
 $view->parserExtensions = array(
   new \Slim\Views\TwigExtension()
@@ -23,11 +23,15 @@ $app->get('/products', function () use ($app) {
   $app->render('products.html');
 });
 
+$app->get('/services', function () use ($app) {
+  $app->render('services.html');
+});
+
 $app->get('/company', function () use ($app) {
   $app->render('company.html');
 });
 
-$app->get('/about', function () use ($app) {
+$app->get('/company/about', function () use ($app) {
   $app->render('about.html');
 });
 

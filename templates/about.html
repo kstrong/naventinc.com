@@ -1,14 +1,14 @@
-{% extends "layout-new.html" %}
+{% extends "layout.html" %}
 
 {% block title %}About Us{% endblock %}
 
 {% block styles %}
-<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
-<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="/css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+<link href="/css/jquery.fancybox.css" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block main_image %}
-<img src="images/About_NEG.jpg" />
+<img src="/images/About_NEG.jpg" />
 {% endblock %}
 
 {% block content_primary %}
@@ -21,23 +21,23 @@ one unit, Navigator Entertainment Group.
 <p>
 Since Incorporation in February 2009, Navigator has become a diversified entertainment company with offices in 
 Sacramento, California and more recently Seoul, Korea. The company quickly developed a reputation for creating 
-and producing one-of-a-kind, innovative projects in all mediums including theme park / themed attractions, /
+and producing one-of-a-kind, innovative projects in all mediums including theme park / themed attractions, 
 live entertainment, television, and robotics. 
 </p>
 {% endblock %}
 
 {% block content_secondary %}
 <div class="product-slider">
-  <div class="slide"><a href="images/NEG Machine Shop 2.jpg" rel="product-images-group"><img src="images/NEG Machine Shop 2.jpg" /></a></div>
-  <div class="slide"><a href="images/NEG Shop 3.jpg" rel="product-images-group"><img src="images/NEG Shop 3.jpg" /></a></div>
-  <div class="slide"><a href="images/NEG Shop.jpg" rel="product-images-group"><img src="images/NEG Shop.jpg" /></a></div>
+  <div class="slide"><a href="/images/NEG Machine Shop 2.jpg" rel="product-images-group"><img src="/images/NEG Machine Shop 2.jpg" /></a></div>
+  <div class="slide"><a href="/images/NEG Shop 3.jpg" rel="product-images-group"><img src="/images/NEG Shop 3.jpg" /></a></div>
+  <div class="slide"><a href="/images/NEG Shop.jpg" rel="product-images-group"><img src="/images/NEG Shop.jpg" /></a></div>
 </div>
 {% endblock %}
 
 {% block scripts %}
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>
-  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="/js/jquery.bxslider.min.js"></script>
+  <script src="/js/jquery.fancybox.pack.js"></script>
   <script type="text/javascript">
   jQuery(function ($) {
     $('.product-slider').bxSlider({
