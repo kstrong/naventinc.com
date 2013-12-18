@@ -37,6 +37,8 @@ body {
   text-align: center;
 }
 
+.head-space { height: 28px; }
+
 .top-menu {
   clear: both;
   display: block;
