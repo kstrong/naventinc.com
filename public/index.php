@@ -35,4 +35,8 @@ $app->get('/company/about', function () use ($app) {
   $app->render('about.html');
 });
 
+$app->get('/contact', function () use ($app) {
+  $app->render('contact.html');
+});
+
 $app->run();
