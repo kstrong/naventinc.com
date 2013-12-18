@@ -4,20 +4,24 @@
     <title>Navigator Entertainment - {% block title %}{% endblock %}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="{{ baseUrl() }}/css/normalize.css" rel="stylesheet" type="text/css">
+    {% if slideshow %}
+    <link href="{{ baseUrl() }}/css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <link href="{{ baseUrl() }}/css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    {% endif %}
+    <link href="{{ baseUrl() }}/css/styles.css" rel="stylesheet" type="text/css">
     {% block styles %}{% endblock %}
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
     <div class="side-menu">
-      <a href="/"><img class="logo" src="/images/logo_white.png" /></a>
+      <a href="{{ baseUrl() }}"><img class="logo" src="{{ baseUrl() }}/images/logo_white.png" /></a>
 
       <ul class="menu">
-        <li><a href="/products">Products</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/company">Company</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="{{ siteUrl('/products') }}">Products</a></li>
+        <li><a href="{{ siteUrl('/services') }}">Services</a></li>
+        <li><a href="{{ siteUrl('/company') }}">Company</a></li>
+        <li><a href="{{ siteUrl('/contact') }}">Contact</a></li>
       </ul>
 
       <div class="clear"></div>
@@ -50,5 +54,22 @@
     </div>
 
   </body>
+  {% if slideshow %}
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="{{ baseUrl() }}/js/jquery.bxslider.min.js"></script>
+  <script src="{{ baseUrl() }}/js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+  jQuery(function ($) {
+    $('.product-slider').bxSlider({
+      slideWidth: 164,
+      minSlides: 2,
+      maxSlides: 4,
+      slideMargin: 10
+    });
+
+    $('.product-slider a').fancybox();
+  });
+  </script>
+  {% endif %}
   {% block scripts %}{% endblock %}
 </html>

@@ -20,7 +20,7 @@ $app->get('/', function () use ($app) {
 });
 
 $app->get('/products', function () use ($app) {
-  $app->render('products.html');
+  $app->render('products.html', ['slideshow' => true]);
 });
 
 $app->get('/services', function () use ($app) {
@@ -32,7 +32,7 @@ $app->get('/company', function () use ($app) {
 });
 
 $app->get('/company/about', function () use ($app) {
-  $app->render('about.html');
+  $app->render('about.html', ['slideshow' => true]);
 });
 
 $app->get('/contact', function () use ($app) {
