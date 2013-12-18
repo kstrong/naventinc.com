@@ -166,6 +166,7 @@ body {
   list-style-type: none;
   margin: 0 12px;
   max-width: 176px;
+  vertical-align: top;
 }
 
 .secondary-menu li a {
