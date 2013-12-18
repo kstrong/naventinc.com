@@ -27,6 +27,10 @@ $app->get('/services', function () use ($app) {
   $app->render('services.html');
 });
 
+$app->get('/services/robotics-engineering', function () use ($app) {
+  $app->render('robotics_engineering.html', ['slideshow' => true]);
+});
+
 $app->get('/company', function () use ($app) {
   $app->render('company.html');
 });

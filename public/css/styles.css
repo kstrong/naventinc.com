@@ -163,6 +163,7 @@ body {
   display: inline-block;
   list-style-type: none;
   margin: 0 12px;
+  max-width: 184px;
 }
 
 .secondary-menu li a {
