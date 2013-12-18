@@ -23,4 +23,12 @@ $app->get('/products', function () use ($app) {
   $app->render('products.html');
 });
 
+$app->get('/company', function () use ($app) {
+  $app->render('company.html');
+});
+
+$app->get('/about', function () use ($app) {
+  $app->render('about.html');
+});
+
 $app->run();

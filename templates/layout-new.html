@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <div class="top-menu">
+    <div class="side-menu">
       <a href="/"><img class="logo" src="images/logo_white.png" /></a>
 
       <ul class="menu">
@@ -24,7 +24,29 @@
     </div>
 
     <div class="content">
-      {% block content %}{% endblock %}
+      <div class="content-header">
+        <div class="info-box">
+          <h1>{{ block('title') }}</h1>
+        </div>
+      </div>
+
+      <div class="content-main">
+        <div class="left-col">
+          {% block main_image %}{% endblock %}
+        </div>
+
+        <div class="right-col">
+          <div class="info-box">
+            {% block content_primary %}{% endblock %}
+          </div>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+
+      <div class="content-secondary info-box">
+        {% block content_secondary %}{% endblock %}
+      </div>
     </div>
 
   </body>

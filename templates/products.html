@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout-new.html" %}
 
 {% block title %}Products{% endblock %}
 
@@ -7,45 +7,35 @@
 <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
 {% endblock %}
 
-{% block content %}
+{% block main_image %}
+<img src="images/monster-mansion-interior-w.jpg" />
+{% endblock %}
 
-  <div class="product-main">
-    <div class="left-col">
-      <img src="images/monster-mansion-interior-w.jpg" />
-    </div>
+{% block content_primary %}
+<h1>Monster Mansion</h1>
+<p>Monster Mansion (formerly Monster Plantation) is a family &amp; kids style Mill Chute dark ride at 
+  Six Flags Over Georgia located in Austell, Georgia. 
+  Aboard 6-passenger boats, riders pass through nine scenes along the 700' foot-long flume, passing
+  by over 107 original audio animatronic characters. Outside of Disney parks, it is the world's 
+  largest animatronic-based family dark ride. The new &quot;Monster Mansion&quot; incarnation also
+  features more 4D effects than any other ride in the world.
+</p>
+{% endblock %}
 
-    <div class="right-col">
-      <div class="info-box">
-        <h1>Monster Mansion</h1>
-        <p>Monster Mansion (formerly Monster Plantation) is a family &amp; kids style Mill Chute dark ride at 
-          Six Flags Over Georgia located in Austell, Georgia. 
-          Aboard 6-passenger boats, riders pass through nine scenes along the 700' foot-long flume, passing
-          by over 107 original audio animatronic characters. Outside of Disney parks, it is the world's 
-          largest animatronic-based family dark ride. The new &quot;Monster Mansion&quot; incarnation also
-          features more 4D effects than any other ride in the world.
-        </p>
-      </div>
-    </div>
-
-    <div class="clear"></div>
-  </div>
-
-  <div class="product-photos info-box">
-    <h1>Behind the Scenes</h1>
-    <div class="product-slider">
-      <div class="slide"><a href="images/8.jpg" rel="product-images-group"><img src="images/8.jpg" /></a></div>
-      <div class="slide"><a href="images/10.jpg" rel="product-images-group"><img src="images/10.jpg" /></a></div>
-      <div class="slide"><a href="images/Boat Eater Peaches.jpg" rel="product-images-group"><img src="images/Boat Eater Peaches.jpg" /></a></div>
-      <div class="slide"><a href="images/Chili Monster and Fire Kid.jpg" rel="product-images-group"><img src="images/Chili Monster and Fire Kid.jpg" /></a></div>
-      <div class="slide"><a href="images/MM Skins.jpg" rel="product-images-group"><img src="images/MM Skins.jpg" /></a></div>
-      <div class="slide"><a href="images/MM New Figure.jpg" rel="product-images-group"><img src="images/MM New Figure.jpg" /></a></div>
-      <div class="slide"><a href="images/MM New Figure 4.jpg" rel="product-images-group"><img src="images/MM New Figure 4.jpg" /></a></div>
-      <div class="slide"><a href="images/MM New Figure 5.jpg" rel="product-images-group"><img src="images/MM New Figure 5.jpg" /></a></div>
-      <div class="slide"><a href="images/Coach and Scouts.jpg" rel="product-images-group"><img src="images/Coach and Scouts.jpg" /></a></div>
-      <div class="slide"><a href="images/band_1_thumb.png" rel="product-images-group"><img src="images/band_1_thumb.png" /></a></div>
-    </div>
-  </div>
-
+{% block content_secondary %}
+<h1>Behind the Scenes</h1>
+<div class="product-slider">
+  <div class="slide"><a href="images/8.jpg" rel="product-images-group"><img src="images/8.jpg" /></a></div>
+  <div class="slide"><a href="images/10.jpg" rel="product-images-group"><img src="images/10.jpg" /></a></div>
+  <div class="slide"><a href="images/Boat Eater Peaches.jpg" rel="product-images-group"><img src="images/Boat Eater Peaches.jpg" /></a></div>
+  <div class="slide"><a href="images/Chili Monster and Fire Kid.jpg" rel="product-images-group"><img src="images/Chili Monster and Fire Kid.jpg" /></a></div>
+  <div class="slide"><a href="images/MM Skins.jpg" rel="product-images-group"><img src="images/MM Skins.jpg" /></a></div>
+  <div class="slide"><a href="images/MM New Figure.jpg" rel="product-images-group"><img src="images/MM New Figure.jpg" /></a></div>
+  <div class="slide"><a href="images/MM New Figure 4.jpg" rel="product-images-group"><img src="images/MM New Figure 4.jpg" /></a></div>
+  <div class="slide"><a href="images/MM New Figure 5.jpg" rel="product-images-group"><img src="images/MM New Figure 5.jpg" /></a></div>
+  <div class="slide"><a href="images/Coach and Scouts.jpg" rel="product-images-group"><img src="images/Coach and Scouts.jpg" /></a></div>
+  <div class="slide"><a href="images/band_1_thumb.png" rel="product-images-group"><img src="images/band_1_thumb.png" /></a></div>
+</div>
 {% endblock %}
 
 {% block scripts %}
