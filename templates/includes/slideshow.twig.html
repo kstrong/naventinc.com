@@ -1,0 +1,7 @@
+{% macro slideshow(photos, slide_base) %}
+<div class="product-slider">
+  {% for photo in photos %}
+  <div class="slide"><a href="{{ slide_base }}{{ photo[1] }}" rel="product-images-group"><img src="{{ slide_base }}{{ photo[0] }}" /></a></div>
+  {% endfor %}
+</div>
+{% endmacro %}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}Special Effects{% endblock %}
+
+{% block main_image %}
+<img src="/images/services/special_effects/mainSPX1.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p>Lorem Ipsum Revocation Navigator is the master of special effects. Our expolosion specialists are top notch.</p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumbAteam2.jpg', 'Ateam2.jpg'],
+    ['thumbFrog.jpg', 'Frog.jpg'],
+    ['thumbFrontWishingWell.jpg', 'FrontWishingWell.jpg'],
+    ['thumbFXWishingWell.jpg', 'FXWishingWell.jpg'],
+    ['thumbIMG_5087.jpg', 'IMG_5087.JPG'],
+    ['thumbPicture150.jpg', 'Picture150.jpg'],
+    ['thumbPicture158.jpg', 'Picture158.jpg'],
+    ['thumbSPX1.jpg', 'SPX 1.jpg']
+  ]
+%}
+{% set slide_base = '/images/services/special_effects/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}

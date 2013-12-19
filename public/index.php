@@ -31,6 +31,14 @@ $app->get('/services/robotics-engineering', function () use ($app) {
   $app->render('robotics_engineering.html', ['slideshow' => true]);
 });
 
+$app->get('/services/special-effects', function () use ($app) {
+  $app->render('special_effects.html', ['slideshow' => true]);
+});
+
+$app->get('/services/show-action-equipment', function () use ($app) {
+  $app->render('show_action_equipment.html', ['slideshow' => true]);
+});
+
 $app->get('/company', function () use ($app) {
   $app->render('company.html');
 });
