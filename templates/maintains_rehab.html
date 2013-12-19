@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}Maintains/Rehab{% endblock %}
+
+{% block main_image %}
+<img src="/images/services/maintains_rehab/mainIMG_3963.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p>Here at the Bender Bending Rodriguez Robot Rehab Lab, we subject our models to the most rigorous of maintenance .....</p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['ThumbIMG_3963.jpg', 'IMG_3963.jpg'],
+    ['ThumbIMG_5168.jpg', 'IMG_5168.jpg'],
+    ['ThumbPicture130.jpg', 'Picture130.jpg'],
+    ['ThumbPicture147.jpg', 'Picture147.jpg'],
+    ['ThumbServices.jpg', 'Services.JPG'],
+  ]
+%}
+{% set slide_base = '/images/services/maintains_rehab/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}

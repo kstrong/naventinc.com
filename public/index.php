@@ -39,6 +39,14 @@ $app->get('/services/show-action-equipment', function () use ($app) {
   $app->render('show_action_equipment.html', ['slideshow' => true]);
 });
 
+$app->get('/services/wax-figures', function () use ($app) {
+  $app->render('wax_figures.html', ['slideshow' => true]);
+});
+
+$app->get('/services/maintains-rehab', function () use ($app) {
+  $app->render('maintains_rehab.html', ['slideshow' => true]);
+});
+
 $app->get('/company', function () use ($app) {
   $app->render('company.html');
 });

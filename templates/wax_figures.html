@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}Wax Figures{% endblock %}
+
+{% block main_image %}
+<img src="/images/services/wax_figures/mainDepp-Medium.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p>Lorem Ipsum Wax Figures</p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumbAMELIA1.jpg', 'AMELIA1.jpg'],
+    ['thumbDepp-Medium.jpg', 'Depp-Medium.jpg'],
+    ['ThumbHellboyLensFlarePoster.jpg', 'HellboyLensFlarePoster.jpg'],
+    ['thumbIMG_3962.jpg', 'IMG_3962.jpg'],
+    ['thumbIMG_4990.jpg', 'IMG_4990.jpg'],
+    ['thumbIMG_5302.jpg', 'IMG_5302.jpg'],
+    ['thumbMario-Full.jpg', 'Mario-Full.jpg'],
+    ['thumbMIBPoster.jpg', 'MIBPoster.jpg'],
+    ['thumbranger.jpg', 'ranger.jpg'],
+    ['thumbRoboheadsPainted.jpg', 'RoboheadsPainted.jpg'],
+    ['thumbwax3.jpg', 'wax3.jpg'],
+    ['thumbWaxPro.jpg', 'WaxPro.jpg'],
+  ]
+%}
+{% set slide_base = '/images/services/wax_figures/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}
