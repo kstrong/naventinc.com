@@ -23,6 +23,14 @@ $app->get('/products', function () use ($app) {
   $app->render('products.html', ['slideshow' => true]);
 });
 
+$app->get('/projects', function () use ($app) {
+  $app->render('pages/projects.html', ['slideshow' => true]);
+});
+
+$app->get('/projects/neg-client-projects', function () use ($app) {
+  $app->render('pages/client_projects.html');
+});
+
 $app->get('/services', function () use ($app) {
   $app->render('services.html');
 });
