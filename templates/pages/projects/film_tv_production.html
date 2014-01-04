@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}Film TV Production{% endblock %}
+
+{% block main_image %}
+<img src="/images/projects/neg_client_project/film_tv_production/mainDollhousAnimatedProp1.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p>Film TV Production text goes here</p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumbDollhousAnimatedProp.jpg', 'Dollhouse-Animated-Prop.jpg'],
+    ['thumbDollhousAnimatedProp1.jpg', 'DollhouseAnimatedProp1.jpg'],
+    ['thumbDollHouseChair.jpg', 'Doll-House-Chair-2.jpg'],
+    ['thumbDollHouseChair2.jpg', 'Doll-House-Chair.jpg'],
+    ['thumbrp2.gif', 'rp2.gif'],
+    ['thumbservice4.jpg', 'service4.jpg'],
+    ['thumbStargate.jpg', 'Stargate.jpg'],
+    ['thumbstargate1.jpg', 'stargate1.jpg']
+  ]
+%}
+{% set slide_base = '/images/projects/neg_client_project/film_tv_production/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}

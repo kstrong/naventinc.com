@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}Misc. Projects{% endblock %}
+
+{% block main_image %}
+<img src="/images/projects/neg_client_project/misc_projects/mainDragon2.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p>Misc. Projects</p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumbCOFFEEHOUSE5.jpg', 'COFFEEHOUSE5.jpg'],
+    ['thumbcoffeehouseimages1.jpg', 'coffeehouseimages1.jpg'],
+    ['thumbDragon1.jpg', 'Dragon1.jpg'],
+    ['thumbDragon2.jpg', 'Dragon2.jpg'],
+    ['thumbHands_1a.jpg', 'Hands_1a.jpg'],
+    ['thumbIMG_0432.jpg', 'IMG_0432.jpg'],
+    ['thumbIMG_0513.jpg', 'IMG_0513.jpg'],
+    ['thumbIMG_0726.jpg', 'IMG_0726.jpg'],
+    ['thumbIMG_3962.jpg', 'IMG_3962.jpg'],
+    ['thumbJungle3.jpg', 'jungle3.jpg'],
+    ['thumbNikeBody1.jpg', 'NikeBody1.jpg'],
+    ['thumbNikeJoint.jpg', 'NikeJoint.jpg'],
+    ['thumbP1010001.jpg', 'P1010001.jpg'],
+  ]
+%}
+{% set slide_base = '/images/projects/neg_client_project/misc_projects/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}Hollywood Wax Museum{% endblock %}
+
+{% block main_image %}
+<img src="/images/projects/neg_client_project/hollywood_wax_museum/mainIMG_4978.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p>Wax museum text goes here</p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumbConnery-Full.jpg', 'Connery-Full.jpg'],
+    ['thumbcover4.jpg', 'cover4.jpg'],
+    ['thumbDepp-Medium.jpg', 'Depp-Medium.jpg'],
+    ['thumbIMG_4978.jpg', 'IMG_4978.jpg'],
+    ['thumbIMG_4982.jpg', 'IMG_4982.jpg'],
+    ['thumbwax3.jpg', 'wax3.jpg']
+  ]
+%}
+{% set slide_base = '/images/projects/neg_client_project/hollywood_wax_museum/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}

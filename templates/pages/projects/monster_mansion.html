@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}Monster Mansion{% endblock %}
+
+{% block main_image %}
+<img src="/images/projects/neg_client_project/monster_mansion/monster-mansion-interior-w.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p> The newly enhanced ride, redesigned by ordinal creators Gary Goddard and Phil Mendez, the project was first outside of Disney Park to employ sophisticated audio-animatronic figure on such a massive scale, NEG oversaw the construction of the re-imagined dark ride animatronics, show action equipment and created new special effects completing the project on-time and on budget.</p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumb8.jpg', '8.jpg'],
+    ['thumb10.jpg', '10.jpg'],
+    ['thumbband-1.jpg', 'band-1.jpg'],
+    ['thumbboateater.jpg', 'boateater.jpg'],
+    ['thumbChili-Monster-and-Fire-Kid.jpg', 'Chili-Monster-and-Fire-Kid.jpg'],
+    ['thumbCoach-and-Scouts.jpg', 'Coach-and-Scouts.jpg'],
+    ['thumbDrunks.jpg', 'Drunks.jpg'],
+    ['thumbfrog2.jpg', 'frog2.jpg'],
+    ['thumbMissy-Scarlett-1.jpg', 'Missy-Scarlett-1.jpg'],
+    ['thumbmm-fur-monster.jpg', 'mm-fur-monster.jpg'],
+    ['thumbmm-new-figure-3.jpg', 'mm-new-figure-3.jpg'],
+    ['thumbmm-new-figure-4.jpg', 'mm-new-figure-4.jpg'],
+    ['thumbmm-new-figure.jpg', 'mm-new-figure.jpg'],
+    ['thumbmm-skins.jpg', 'mm-skins.jpg'],
+    ['thumbmonster-mansion-interior-w.jpg', 'monster-mansion-interior-w.jpg'],
+    ['thumbnew-figure2.jpg', 'new-figure2.jpg'],
+  ]
+%}
+{% set slide_base = '/images/projects/neg_client_project/monster_mansion/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}
