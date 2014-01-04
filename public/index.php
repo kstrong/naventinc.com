@@ -32,7 +32,7 @@ $app->get('/projects/neg-client-projects', function () use ($app) {
 });
 
 $app->get('/projects/projects-in-development', function () use ($app) {
-  echo 'not implemented';
+  $app->render('pages/projects_in_development.html');
 });
 
 $projects_pages = [
@@ -44,6 +44,11 @@ $projects_pages = [
   'misc-projects' => 'misc_projects.html',
   'monster-mansion' => 'monster_mansion.html',
   // projects in development
+  'aqua-pirate-adventure' => 'aqua_pirate_adventure.html',
+  'd-world-resort' => 'd-world_resort.html',
+  'jungle-bots-adventure' => 'jungle_bots_adventure.html',
+  'robotics-touring-show' => 'robotics_touring_show.html',
+  'triad' => 'triad.html',
 ];
 
 foreach ($projects_pages as $uri => $template) {
