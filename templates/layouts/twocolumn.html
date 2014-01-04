@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navigator Entertainment - {% block title %}{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link href="{{ baseUrl() }}/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="{{ baseUrl() }}/css/styles.css" rel="stylesheet" type="text/css">
+    {% block styles %}{% endblock %}
+  </head>
+  <body>
+
+    <div class="side-menu">
+      <a href="{{ baseUrl() }}"><img class="logo" src="{{ baseUrl() }}/images/logo_white.png" /></a>
+
+      <ul class="menu">
+        <li><a href="{{ siteUrl('/projects') }}">Projects</a></li>
+        <li><a href="{{ siteUrl('/services') }}">Services</a></li>
+        <li><a href="{{ siteUrl('/company') }}">Company</a></li>
+        <li><a href="{{ siteUrl('/contact') }}">Contact</a></li>
+      </ul>
+
+      <div class="clear"></div>
+    </div>
+
+    <div class="content twocolumn">
+      <div class="content-header">
+        <div class="head-space"></div>
+        <div class="info-box">
+          <h1>{{ block('title') }}</h1>
+        </div>
+      </div>
+
+      <div class="content-main">
+        <div class="left-col">
+          {% block left_column %}{% endblock %}
+        </div>
+
+        <div class="right-col">
+          {% block right_column %}{% endblock %}
+        </div>
+
+        <div class="clear"></div>
+      </div>
+
+      <div class="content-secondary info-box">
+        {% block content_secondary %}{% endblock %}
+      </div>
+    </div>
+
+  </body>
+  {% block scripts %}{% endblock %}
+</html>
