@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}Jungle Bots Adventure{% endblock %}
+
+{% block main_image %}
+<img src="/images/projects/projects_in_development/jungle_bots_adventure/maincover2.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p>The Jungle Bots Adventure will take guests on a thrilling journey into the world of Metallica robotics animals in this classic futurist’s world. The innovative incorporation of a six passenger’s lifeboat system with evocative environments, state of the art animatronics and a thrilling ending promise to deliver an unforgettable adventure for every guest.</p>
+<p>From the moment visitors enter the Jungle Bots Temple Visitor Center, there are ominous sounds of thunder echoing through the overhead skies. Undaunted, each guest boards a life boat for an adventure on a lost island starting when the boat suddenly appear to break ups on a submerged reef, tossing the guest into a underwater craven without any power just floating down stream. After exiting the craven we enter the jungle still floating down tree line river, when all of a sudden the guest are nearly trampled to death by a strange robotic creatures just out of reach.   </p>
+<p>Over the last few years, more and more businesses have recognized the benefits of improving their establishments with interesting and creative shows. A "themed" park that has fun attractions and a beautiful atmosphere can only create more sales! Exciting theme ideas have shown to improve attendance and generate more spending in locations all over the world. </p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumbJbbadhumans.jpg' ,'Jbbadhumans.jpg'],
+    ['thumbjbcharacters.jpg' ,'jbcharacters.jpg'],
+    ['thumbJBCHARATER.jpg' ,'JBCHARATER.jpg'],
+    ['thumbJBProposalArt.jpg' ,'JB-Proposal-Art.jpg'],
+    ['thumbJBShipWreck1.jpg' ,'JB-Ship-Wreck-1.jpg'],
+    ['thumbJBTemple1.jpg' ,'JB-Temple-1.jpg'],
+    ['thumbJBTradeshow1.jpg' ,'JB-Trade-show1.jpg'],
+    ['thumbjbtradeshow2.jpg' ,'JB-Trade-Show2.jpg'],
+    ['thumbjbvillian.jpg' ,'jbvillian.jpg'],
+    ['thumbJBWaterFalls1.jpg' ,'JB-Water-Falls-1.jpg'],
+    ['thumbmaincover2.jpg' ,'cover2.jpg'],
+    ['thumbproduct1.jpg' ,'product1.jpg'],
+  ]
+%}
+{% set slide_base = '/images/projects/projects_in_development/jungle_bots_adventure/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}

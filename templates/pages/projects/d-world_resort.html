@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}D-World Resort{% endblock %}
+
+{% block main_image %}
+<img src="/images/projects/projects_in_development/d-world_resort/mainD-WorldSigning.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p>Daegu World Resort will be a Destination Resort and Entertainment Mecca. It will feature an upscale Living Condominium, Inclusive Hotel, a Retail and Entertainment Village (City Walk), Indoor Olympic Training Center, Studio Theme Park, Interactive Theme Park and an Indoor Water Park.</p>
+<p>The master plan for this project will be developed over the course of approximately one year. The process began with site investigations and discussions with the client group and consultants, theme park operators and others. This led to initial concept plans for the park, development of theming for different areas of the park, creation of models to study the park layout, and ultimately to the master plan.</p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumbD-WorldSigning.jpg', 'D-World-Signing.jpg'],
+    ['thumbD-WorldSite.jpg', 'D-World-Site.jpg'],
+    ['thumbD-WorldSite2.jpg', 'D-World-Site-2.jpg'],
+    ['thumbD-WorldSite3.jpg', 'D-World-Site-3.jpg'],
+  ]
+%}
+{% set slide_base = '/images/projects/projects_in_development/d-world_resort/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}

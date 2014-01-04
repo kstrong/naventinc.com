@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}Aqua Pirate Adventure{% endblock %}
+
+{% block main_image %}
+<img src="/images/projects/projects_in_development/aqua_pirate_adventure/mainpirateshipsmall.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p>Aquazoom boats are an amusement ride in which people drive tiny boats in a pool or pond and try to crash into each other for fun.</p>
+<p>In a patent application related to the ride, its inventor wrote, "one of the thrills of operating amusement park boats of this type is to initiate collisions with other similar boat within a relatively confined pool." The small boats can hold one or two people and have over-sized fenders that resemble the inner tube of a large tractor tire inner tube. </p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumbattraction-final.jpg', 'attraction-final.jpg'],
+    ['thumbboat3.jpg', 'boat-3.jpg'],
+    ['thumbclifffinal.jpg', 'cliff-final.jpg'],
+    ['thumbfortressfinal.jpg', 'fortress-final.jpg'],
+    ['thumbislandfinal.jpg', 'island-final.jpg'],
+    ['thumbpirateshipsmall.jpg', 'pirate-ship-small-.jpg'],
+    ['thumbRevisedHerow-wm.jpg', 'Revised-Hero-w-wm.jpg'],
+    ['thumbvillage-final.jpg', 'village-final.jpg'],
+  ]
+%}
+{% set slide_base = '/images/projects/projects_in_development/aqua_pirate_adventure/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}

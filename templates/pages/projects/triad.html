@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}T.R.I.A.D{% endblock %}
+
+{% block main_image %}
+<img src="/images/projects/projects_in_development/triad/TRIAD.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p><p>The &#8220;T.R.I.A.D Show&#8221; is a good old-fashioned entertainment at its best. Located in a seated area, entertainment robot (Animatronics) would suddenly &#8220;come to life&#8221; and entertain passersby with song, humor and wit. There is enough action, romance and excitement in this show to keep even today's more demanding audiences entertained.</p>
+<p><p>As the name indicates, T.R.I.A.D is a computerized eight minute special effects attraction and show featuring the use of animatronics, show action equipment, leaping water, atmosphere effects, customs soundtrack, and theatrical lighting to complete the show. It’s simple. The T.R.I.A.D characters do more than just &#8220;move&#8221; they perform like live actors on stage with props, costumes, makeup and lights.</p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumbAnimatronic2.jpg', 'Animatronic2.jpg'],
+    ['thumbbullfrogs.jpg', 'bullfrogs.jpg'],
+    ['thumbcolorBamboo-Stage.jpg', 'colorBamboo-Stage.jpg'],
+    ['thumbcolorIceStage--final.jpg', 'colorIceStage--final.jpg'],
+    ['thumbFrog-Boy.jpg', 'Frog-Boy.jpg'],
+    ['thumbShack-Stage-2.jpg', 'Shack-Stage-2.jpg'],
+    ['thumbwishing-wellb.jpg', 'wishing-wellb.jpg'],
+  ]
+%}
+{% set slide_base = '/images/projects/projects_in_development/triad/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}

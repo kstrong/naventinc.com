@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}Robotics Touring Show{% endblock %}
+
+{% block main_image %}
+<img src="/images/projects/projects_in_development/robotics_touring_show/mainfinal7.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p>&#8220;A Robotics Affair&#8221;, launching in South East Asia, will take guests into a veritable wonderland of robotics, incorporating the past, the present, and the future.  </p>
+<p>With evocative environments, state-of-the-art animatronics, and thrilling special effects, it promises to deliver an unforgettable adventure for every guest. From the entrance, where patrons are immersed in a cacophony of heavy machinery sounds and &#8220;steam-punk&#8221; decor, through the high-tech corridors of the individual pavilions, and into the interactive Pavilion of the Future, every sense will be tested and inundated by state-of-the-art displays.  </p>
+<p>Each guest will be intrigued to see what’s just around the next bend, to become an observer and participant in a new kind of robotic world.  Never before, and perhaps never again, will there be this concentration and diversity of robotic exhibits in one touring show.  It is truly &#8220;A Robotics Affair&#8221;. </p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumbclassroom15.jpg', 'classroom-15.jpg'],
+    ['thumbelenewighting.jpg', 'ele-new-lighting.jpg'],
+    ['thumbentrance19-2.jpg', 'entrance-19-2.jpg'],
+    ['thumbfinal7.jpg', 'final-7.jpg'],
+    ['thumbfloorplan--19gu.jpg', 'floorplan--19gu.jpg'],
+    ['thumbfloorplan-13-26.jpg', 'floorplan-13-26.jpg'],
+    ['thumbowl-35-6.jpg', 'owl-35-6.jpg'],
+    ['thumbset-17-+18.jpg', 'set-17-+18.jpg'],
+    ['thumbTouring-Robotics-4.jpg', 'Touring-Robotics-4.jpg'],
+    ['thumbTouring-Show-Robotics-2.jpg', 'Touring-Show-Robotics-2.jpg'],
+    ['thumbTouringShow Robotics.jpg', 'Touring-Show-Robotics.jpg'],
+    ['thumbTouringShowRobotics3.jpg', 'Touring-Show-Robotics-3.jpg'],
+  ]
+%}
+{% set slide_base = '/images/projects/projects_in_development/robotics_touring_show/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}
