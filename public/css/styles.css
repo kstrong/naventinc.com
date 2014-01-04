@@ -35,7 +35,9 @@ body {
   color: white;
   display: block;
   text-align: center;
+  transition: color 0.5s;
 }
+.homepage-menu li:hover a span { color: #999; transition: color 0.5s; }
 
 .head-space { height: 28px; }
 
@@ -184,7 +186,9 @@ body {
   font-size: 1.2em;
   margin-top: 4px;
   text-align: center;
+  transition: color 0.5s;
 }
+.secondary-menu li:hover a span { color: #999; transition: color 0.5s; }
 
 .content-secondary img {
   margin: 0 auto;
