@@ -78,6 +78,10 @@ $app->get('/company/about', function () use ($app) {
   $app->render('about.html', ['slideshow' => true]);
 });
 
+$app->get('/company/executive-team', function () use ($app) {
+  $app->render('pages/executive_team.html');
+});
+
 $app->get('/contact', function () use ($app) {
   $app->render('contact.html');
 });
