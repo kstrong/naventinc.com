@@ -99,6 +99,11 @@ body {
   margin-left: 45%;
 }
 
+.right-col .info-box {
+  max-height: 300px;
+  overflow: auto;
+}
+
 .content-home { margin: 0 auto; width: 960px; }
 .content {
   margin-left: 220px;

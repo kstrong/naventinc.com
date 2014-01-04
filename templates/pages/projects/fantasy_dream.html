@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}Fantasy Dream{% endblock %}
+
+{% block main_image %}
+<img src="/images/projects/neg_client_project/fantasy_dream/mainFantasy-Dream-3.jpg">
+{% endblock %}
+
+{% block content_primary %}
+<p>Navigator Entertainment Group was contracted to provide the Technical Services of the &quot;Fantasy Dream Dark Ride&quot; to be rebuilt and services on location at the Lotte World Theme Park in Korea. </p>
+{% endblock %}
+
+{% block content_secondary %}
+{% import "includes/slideshow.twig.html" as ui %}
+
+{%
+  set photos = [
+    ['thumbDCP_1615.jpg', 'DCP_1615.jpg'],
+    ['thumbDCP_1630.jpg', 'DCP_1630.jpg'],
+    ['thumbDCP_1632.jpg', 'DCP_1632.jpg'],
+    ['thumbFantasyDream1.jpg', 'Fantasy-Dream-1.jpg'],
+    ['thumbFantasyDream2.jpg', 'Fantasy-Dream-2.jpg'],
+    ['thumbFantasyDream3.jpg', 'Fantasy-Dream-3.jpg'],
+    ['tumbFantasyDream.jpg', 'Fantasy-Dream.jpg']
+  ]
+%}
+{% set slide_base = '/images/projects/neg_client_project/fantasy_dream/' %}
+
+{{ ui.slideshow(photos, slide_base) }}
+
+{% endblock %}
