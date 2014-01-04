@@ -66,7 +66,7 @@ $services_pages = [
 
 foreach ($services_pages as $uri => $template) {
   $app->get('/services/'.$uri, function () use ($app, $template) {
-    $app->render($template, ['slideshow' => true]);
+    $app->render('pages/services/'.$template, ['slideshow' => true]);
   });
 }
 
