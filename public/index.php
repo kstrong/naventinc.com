@@ -19,10 +19,6 @@ $app->get('/', function () use ($app) {
   $app->render('homepage.html');
 });
 
-$app->get('/products', function () use ($app) {
-  $app->render('products.html', ['slideshow' => true]);
-});
-
 $app->get('/projects', function () use ($app) {
   $app->render('pages/projects.html', ['slideshow' => true]);
 });
