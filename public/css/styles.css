@@ -210,8 +210,8 @@ body {
   padding: 10px;
 
   zoom: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr=#6600AEF1, endColorStr=#6600AEF1)";
-  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#6600AEF1, endColorStr=#6600AEF1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorstr=#6600AEF1,endColorstr=#6600AEF1)";
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#6600AEF1,endColorstr=#6600AEF1);
 }
 
 .info-box h1 {
