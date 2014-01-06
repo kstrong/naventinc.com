@@ -205,11 +205,13 @@ body {
 .info-box {
   background-color: rgb(0, 174, 241);
   background-color: rgba(0, 174, 241, 0.4);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-  filter: alpha(opacity=40);
   border-radius: 12px;
   margin: 12px 0;
   padding: 10px;
+
+  zoom: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr=#6600AEF1, endColorStr=#6600AEF1)";
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#6600AEF1, endColorStr=#6600AEF1);
 }
 
 .info-box h1 {
