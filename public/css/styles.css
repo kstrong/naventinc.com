@@ -35,9 +35,9 @@ body {
   color: white;
   display: block;
   text-align: center;
-  transition: color 0.5s;
+  transition: color 0.4s;
 }
-.homepage-menu li:hover a span { color: #999; transition: color 0.5s; }
+.homepage-menu li:hover a span { color: #999; transition: color 0.4s; }
 
 .homepage-menu img {
   width: 150px;
@@ -57,9 +57,9 @@ body {
   color: white;
   display: block;
   text-align: center;
-  transition: color 0.5s;
+  transition: color 0.4s;
 }
-.homepage-contact a:hover span { color: #999; transition: color 0.5s; }
+.homepage-contact a:hover span { color: #999; transition: color 0.4s; }
 
 .head-space { height: 28px; }
 
@@ -106,12 +106,12 @@ body {
 .menu a {
   color: white;
   text-decoration: none;
-  transition: color 0.5s;
+  transition: color 0.4s;
 }
 
 .menu li a:hover {
   color: #999;
-  transition: color 0.5s;
+  transition: color 0.4s;
 }
 
 .left-col {
@@ -225,8 +225,12 @@ body {
   display: inline-block;
   list-style-type: none;
   margin: 0 12px;
-  max-width: 176px;
+  max-width: 164px;
   vertical-align: top;
+}
+
+.client-projects li {
+  max-width: 120px;
 }
 
 .secondary-menu li a {
@@ -239,9 +243,9 @@ body {
   font-size: 1.2em;
   margin-top: 4px;
   text-align: center;
-  transition: color 0.5s;
+  transition: color 0.4s;
 }
-.secondary-menu li:hover a span { color: #999; transition: color 0.5s; }
+.secondary-menu li:hover a span { color: #999; transition: color 0.4s; }
 
 .content-secondary img {
   margin: 0 auto;
