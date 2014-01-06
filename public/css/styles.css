@@ -136,15 +136,23 @@ body {
   max-width: 330px;
 }
 
-.twocolumn .right-col img {
+.twocolumn .left-col img, .twocolumn .right-col img {
   border: 1px solid #222;
   margin: 0 10%;
   max-height: 300px;
-  max-width: 330px;
+  max-width: 300px;
 }
 
 .twocolumn .left-col, .twocolumn .right-col {
   padding: 0 10px;
+}
+
+.twocolumn .left-col { 
+  width: 50%;
+}
+
+.twocolumn .right-col {
+  margin-left: 50%;
 }
 
 .info-box {
