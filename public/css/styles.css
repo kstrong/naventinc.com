@@ -215,7 +215,8 @@ body {
 }
 
 .info-box p { 
-  line-height: 20px;
+  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 22px;
   margin: 4px 2px 8px;
 }
 
@@ -309,12 +310,13 @@ body {
 }
 
 .executive-info h3 {
-  font-weight: normal;
   font-style: italic;
-  text-decoration: underline;
+  font-family: "Trebuchet MS", Verdana, "Helvetica Neue", sans-serif;
+  font-weight: bold;
 }
 
 .experience em { 
   display: block;
   margin: 0 0 8px;
+  font-family: "Trebuchet MS", Verdana, "Helvetica Neue", sans-serif;
 }
