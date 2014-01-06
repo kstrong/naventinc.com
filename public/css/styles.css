@@ -2,6 +2,7 @@
 body {
   background: url('images/background.png') repeat-y center top;
   color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .clear {
@@ -23,6 +24,9 @@ body {
 .homepage-menu li {
   display: inline-block;
   font-size: 1.8em;
+  font-variant: small-caps;
+  font-weight: bold;
+  letter-spacing: 1px;
   list-style-type: none;
   margin: 0 18px;
 }
@@ -44,6 +48,8 @@ body {
 }
 
 .homepage-contact {
+  font-variant: small-caps;
+  letter-spacing: 1px;
   position: absolute;
   top: 8%;
   right: 4%;
@@ -94,6 +100,9 @@ body {
 .menu li {
   display: inline-block;
   font-size: 1.8em;
+  font-variant: small-caps;
+  font-weight: bold;
+  letter-spacing: 1px;
   list-style-type: none;
 }
 .top-menu .menu li {
@@ -136,6 +145,7 @@ body {
 }
 
 .content-home p {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.4em;
   margin: 12px auto 60px;
   width: 64%;
@@ -156,6 +166,9 @@ body {
 }
 
 .content-header h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  letter-spacing: 1px;
   text-align: center;
 }
 
@@ -202,6 +215,7 @@ body {
 }
 
 .info-box p { 
+  line-height: 20px;
   margin: 4px 2px 8px;
 }
 
@@ -289,6 +303,7 @@ body {
 }
 
 .executive-info h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   margin: 8px 0;
 }
