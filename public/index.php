@@ -91,4 +91,8 @@ $app->get('/contact', function () use ($app) {
   $app->render('contact.html');
 });
 
+$app->get('/key-players', function () use ($app) {
+  $app->render('pages/key_players.html');
+});
+
 $app->run();
