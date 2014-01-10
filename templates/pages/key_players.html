@@ -4,7 +4,11 @@
 
 {% block content_primary %}
 <div class="info-box">
-  Slideshow goes here.
+  <ul class="keyplayers-slider">
+    <li><img src="/images/keyplayers/1keyplayer.jpg" title="This is a key player in the history of robo sports."></li>
+    <li><img src="/images/keyplayers/2keyplayers.jpg" title="This player was key to the discovery of space."></li>
+    <li><img src="/images/keyplayers/3keyplayers.jpg" title="Player here is the uber pwnage."></li>
+  </ul>
 </div>
 {% endblock %}
 
@@ -15,4 +19,25 @@
   <li><a href="/company/executive-team#ronteeman"><img src="/images/company/executive_team/Ron-Teeman-head-shot.jpg"><span>Ron Teeman</span></a></li>
   <li><a href="/company/executive-team#timnordella"><img src="/images/company/executive_team/Tim-Nordella-Head-Shot.jpg"><span>Tim Nordella</span></a></li>
 </ul>
+{% endblock %}
+
+{% block pre_styles %}
+  <link href="{{ baseUrl() }}/css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+  <link href="{{ baseUrl() }}/css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block scripts %}
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="{{ baseUrl() }}/js/jquery.bxslider.min.js"></script>
+  <script src="{{ baseUrl() }}/js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+  jQuery(function ($) {
+    $('.keyplayers-slider').bxSlider({
+      slideWidth: 720,
+      mode: 'fade',
+      captions: true,
+      auto: true
+    });
+  });
+  </script>
 {% endblock %}

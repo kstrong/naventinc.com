@@ -5,6 +5,7 @@
     <title>Navigator Entertainment - {% block title %}{% endblock %}</title>
 
     <link href="{{ baseUrl() }}/css/normalize.css" rel="stylesheet" type="text/css">
+    {% block pre_styles %}{% endblock %}
     <link href="{{ baseUrl() }}/css/styles.css" rel="stylesheet" type="text/css">
     {% block styles %}{% endblock %}
   </head>

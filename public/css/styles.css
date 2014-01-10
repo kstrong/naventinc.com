@@ -67,7 +67,7 @@ body {
 }
 .homepage-contact a:hover span { color: #999; transition: color 0.4s; }
 
-.head-space { height: 28px; }
+.head-space { height: 24px; }
 
 .top-menu {
   clear: both;
@@ -145,7 +145,7 @@ body {
 }
 
 .content-home p {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, serif;
   font-size: 1.4em;
   margin: 12px auto 60px;
   width: 64%;
@@ -166,10 +166,11 @@ body {
 }
 
 .content-header h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, serif;
   font-variant: small-caps;
   letter-spacing: 1px;
   text-align: center;
+  font-size: 2.4em;
 }
 
 .content-main {
@@ -203,8 +204,10 @@ body {
 }
 
 .info-box {
-  background-color: rgb(0, 174, 241);
-  background-color: rgba(0, 174, 241, 0.4);
+/*  background-color: rgb(0, 174, 241);
+  background-color: rgba(0, 174, 241, 0.4);*/
+  background-color: rgb(0, 96, 196);
+  background-color: rgba(0, 96, 196, 0.7);
   border-radius: 12px;
   margin: 12px 0;
   padding: 10px;
@@ -307,9 +310,9 @@ body {
 }
 
 .executive-info h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, serif;
   font-weight: bold;
-  margin: 8px 0;
+  margin: 4px 0;
 }
 
 .executive-info h3 {
