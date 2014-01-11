@@ -204,19 +204,18 @@ body {
 }
 
 .info-box {
-/*  background-color: rgb(0, 174, 241);
-  background-color: rgba(0, 174, 241, 0.4);*/
   background-color: rgb(0, 96, 196);
   background-color: rgba(0, 96, 196, 0.7);
   border-radius: 12px;
   margin: 12px 0;
   padding: 10px;
 
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#6600AEF1,endColorstr=#6600AEF1)";
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#6600AEF1,endColorstr=#6600AEF1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#B20060C4', endColorstr='#B20060C4')";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B20060C4, endColorstr=#B20060C4);
 }
 
 .info-box h1 {
+  font-family: Georgia, serif;
   margin: 4px 0;
 }
 
