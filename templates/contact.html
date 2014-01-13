@@ -63,3 +63,17 @@ while(x=eval(x));
   <p>Phone # 82-2-588-6621</p>
 </div>
 {% endblock %}
+
+{% block scripts %}
+<script src="{{ baseUrl() }}/js/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(function () {
+  var $p1 = $('.left-col .info-box p:first');
+  var $p2 = $('.right-col .info-box p:first');
+  var h = Math.max($p1.height(), $p2.height());
+
+  $p1.height(h); $p2.height(h);
+});
+</script>
+{% endblock %}
+
