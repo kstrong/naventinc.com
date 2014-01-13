@@ -288,6 +288,10 @@ body {
   padding: 4px;
 }
 
+.bx-wrapper .bx-pager.bx-default-pager a {
+  behavior: url(/css/PIE.htc);
+}
+
 .bx-wrapper .bx-caption {
   background: url(images/caption_bg.png);
   background: rgba(80, 80, 80, 0.75);
