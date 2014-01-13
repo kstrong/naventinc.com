@@ -285,6 +285,10 @@ body {
   padding: 4px;
 }
 
+.bx-wrapper .bx-caption {
+  background: url(images/caption_bg.png);
+  background: rgba(80, 80, 80, 0.75);
+}
 .bx-wrapper .bx-caption span {
   font-family: "Trebuchet MS", Verdana, "Helvetica Neue", Helvetica, sans-serif;
 }
