@@ -301,6 +301,7 @@ body {
 }
 
 .keyplayers .bx-caption span {
+  padding-right: 32px;
   position: absolute;
   top: 50%;
   margin-top: -20%;
