@@ -206,6 +206,9 @@ body {
 .info-box {
   background: url(images/info_bg.png) repeat;
   background: rgba(0, 96, 196, 0.7);
+  -webkit-border-radius: 12px;
+  -mos-border-radius: 12px;
+  behavior: url(/css/PIE.htc);
   border-radius: 12px;
   margin: 12px 0;
   padding: 10px;
