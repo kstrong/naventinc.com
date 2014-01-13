@@ -211,7 +211,6 @@ body {
 
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B20060C4, endColorstr=#B20060C4)";
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B20060C4, endColorstr=#B20060C4);
-  background-color: rgb(0, 96, 196);
 }
 
 .info-box h1 {
