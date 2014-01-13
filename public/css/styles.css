@@ -288,6 +288,42 @@ body {
   padding: 4px;
 }
 
+.bx-wrapper .bx-caption span {
+  font-family: "Trebuchet MS", Verdana, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.keyplayers .bx-caption {
+  bottom: 0;
+  left: auto;
+  right: 0;
+  width: 270px;
+  height: 100%;
+}
+
+.keyplayers .bx-caption span {
+  position: absolute;
+  top: 50%;
+  margin-top: -20%;
+  font-size: 1em;
+}
+
+.keyplayers .bx-wrapper {
+  margin: 0 auto;
+}
+
+.keyplayers .bx-wrapper .bx-pager {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  text-align: left;
+  z-index: 1000;
+}
+
+.keyplayers-slider {
+  margin: 0;
+  padding: 0;
+}
+
 .team-member {
   border-bottom: 1px solid #666;
 }
