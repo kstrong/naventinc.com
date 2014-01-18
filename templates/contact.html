@@ -67,7 +67,7 @@ while(x=eval(x));
 {% block scripts %}
 <script src="{{ baseUrl() }}/js/jquery.min.js"></script>
 <script type="text/javascript">
-jQuery(function () {
+jQuery(function ($) {
   var $p1 = $('.left-col .info-box p:first');
   var $p2 = $('.right-col .info-box p:first');
   var h = Math.max($p1.height(), $p2.height());
