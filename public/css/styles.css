@@ -193,6 +193,7 @@ body {
 
 .twocolumn .left-col, .twocolumn .right-col {
   padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .twocolumn .left-col { 
