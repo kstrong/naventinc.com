@@ -194,6 +194,7 @@ body {
 .twocolumn .left-col, .twocolumn .right-col {
   padding: 0 10px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .twocolumn .left-col { 
@@ -202,6 +203,10 @@ body {
 
 .twocolumn .right-col {
   margin-left: 50%;
+}
+
+.twocolumn .left-col .info-box, .twocolumn .right-col .info-box {
+  text-align: left;
 }
 
 .twocolumn .info-box a {
